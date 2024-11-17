@@ -2,24 +2,38 @@
 import express from 'express';
 import pg from 'pg';
 import dotenv from 'dotenv';
-// import bodyParser from 'body-parser';
 import cors from 'cors';
+import bodyParser from 'body-parser';
 const app=express();
-const port=5000;
 dotenv.config();
+const port=process.env.PORT; 
 
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(cors());
 
-const db = new pg.Client({
-  user: process.env.PG_USER,
-  password: process.env.PG_PASSWORD,
-  host: process.env.PG_HOST,
-  database: process.env.PG_DATABASE,
-  port: process.env.PG_PORT,
+// const db = new pg.Client({
+//   user: process.env.PG_USER,
+//   password: process.env.PG_PASSWORD,
+//   host: process.env.PG_HOST,
+//   database: process.env.PG_DATABASE,
+//   port: process.env.PG_PORT,
+// });
+// db.connect();
+
+const { Pool } = pg;
+
+const db = new Pool({
+    connectionString: process.env.POSTGRES_URL,
+    ssl: {
+      rejectUnauthorized: false, 
+    }
+})
+db.connect((err) => {
+    if (err) throw err
+    console.log("Connect to postgreSQL Successfull");
 });
-db.connect();
 
 app.post('/tasks',async(req,res)=>{
   const {title,description,due_date,status}=req.body;
