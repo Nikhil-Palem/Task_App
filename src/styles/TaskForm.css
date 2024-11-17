@@ -42,4 +42,25 @@
   .task-form button:hover {
     background-color: #3700b3;
   }
+  /* @media (max-width: 768px) {
+    .task-form {
+      padding: 10px;
+    }
+  
+    .task-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .task-form input, 
+    .task-form textarea, 
+    .task-form select {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .task-form button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  } */
   

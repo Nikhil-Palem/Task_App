@@ -75,3 +75,19 @@ html.dark-mode body {
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* @media (max-width: 768px) {
+  .bottom-navbar {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .nav-button {
+    padding: 5px 10px;
+  }
+
+  .nav-label {
+    font-size: 0.7rem;
+  }
+} */

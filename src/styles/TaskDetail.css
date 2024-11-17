@@ -28,4 +28,18 @@
   .task-detail button:hover {
     background-color: #3700b3;
   }
+  /* @media (max-width: 768px) {
+    .task-detail {
+      padding: 10px;
+    }
+  
+    .task-detail h1 {
+      font-size: 1.5rem;
+    }
+  
+    .task-detail button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  } */
   

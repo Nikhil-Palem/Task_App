@@ -70,3 +70,33 @@
     color: white;
     bottom: 45px;
   }
+
+  /* @media (max-width: 768px) {
+    .task-list {
+      padding: 10px;
+    }
+  
+    .task-list h1 {
+      font-size: 1.5rem;
+    }
+  
+    .create-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .task-item {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .options {
+      gap: 5px;
+    }
+  
+    .edit, .delete {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  } */
+  
