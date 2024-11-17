@@ -1,0 +1,31 @@
+.task-detail {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .task-detail h1 {
+    font-size: 2rem;
+    color: #6200ea;
+  }
+  
+  .task-detail p {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .task-detail button {
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-detail button:hover {
+    background-color: #3700b3;
+  }
+  

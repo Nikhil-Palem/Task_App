@@ -1,0 +1,72 @@
+.task-list {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .task-list h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .create-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-button:hover {
+    background-color: #3700b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .options{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+  .edit,.delete{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  .edit:hover,
+  .delete:hover{
+    background-color: rgba(98, 0, 234, 0.1);
+  }
+  .label{
+    font-family: 'Roboto', sans-serif;
+     display: none; 
+  }
+  .box:hover .box[data-id] .label{
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 45px;
+  }
